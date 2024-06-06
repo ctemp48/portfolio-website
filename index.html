@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Christian Templin - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Christian Templin
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          ctemplin@stevens.edu
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1 610 235 6914
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recomendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://media.licdn.com/dms/image/D5603AQE_7BWKkqFoCw/profile-displayphoto-shrink_800_800/0/1664483037823?e=1723075200&v=beta&t=kwA1U1zc3hSAOfucAFs8Zk6uVedDs81VFQoUbkWFVBo" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Christian Templin! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a recent graduate of Stevens Institute of Technology with a Bachelor of Engineering in Computer Engineering. I am returning to Stevens
+            to pursue a Master of Engineering in Applied Artificial Intelligence with an expected graduation of May 2025. I have experience with a wide 
+            range of programming languages and technology stacks and am constantly learning new things. 
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+
+        <div class="skill">
+            <img src="https://th.bing.com/th/id/OIP.EDJ9xoErBbZqK2tExVoJfAAAAA?rs=1&pid=ImgDetMain"/>
+            <h6>Python</h6>
+            <p>4 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="https://th.bing.com/th/id/OIP.Xg0DLunQD3Yl3roEndzfMQHaGy?rs=1&pid=ImgDetMain"/>
+            <h6>C++</h6>
+            <p>4 years experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="https://th.bing.com/th/id/OIP.n8pa_ux7uUyU9CJrzb1scAAAAA?rs=1&pid=ImgDetMain"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>Beginner</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>Beginner</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>Beginner</p>
+          </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Fan Controller Desktop App</h3>
+            <ul>
+              <li>Developed a fan controller application with Java to wirelessly interface with Curtiss-Wright server fan controllers</li>
+            </ul>
+          </div>
+          
+          <div class="project-card">
+            <h3>Python Data Processing</h3>
+            <ul>
+              <li>Developed a Python script, with GUI, to automate organization and presentation of Curtiss-Wright test data using Pandas and Matplotlib</li>
+            </ul>
+          </div>
+          
+          <div class="project-card">
+            <h3>AI Project</h3>
+            <ul>
+              <li>Future project with AI</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Christian is a pretty good guy very smart does everything right. 
+          Definitley should hire him given the chance. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Christian works very hard. He is a very hard working person.
+          Works harder than anyone I have ever seen.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Christian writes good clean code. It is very easy to read his code.
+          I like working with him because I can read his code. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
